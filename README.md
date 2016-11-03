@@ -10,8 +10,8 @@ main文件是整体的入口。引入了页面的主模块page/main，主要舞�
 
 stage-main实例化时，注册多个层次结构，例如level-main。在addlevel的函数中，会把level的各种event事件，绑定到stage-main上。level-main实例化时，会触发墙线的实例化。
 
-墙线的继承关系为
-beeline（基础线）->wall（没有事件的墙线）-wallevt（拥有绑定独立事件的墙线）
+墙线的继承关系为 <br/>
+beeline（基础线）->wall（没有事件的墙线）->wallevt（拥有绑定独立事件的墙线）<br/>
 beelines（基础线集合）->walls（墙线集合，基本元素是wallevt）
 
 ### 优化
