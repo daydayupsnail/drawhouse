@@ -16,8 +16,6 @@
 */
 var stageparent = require('../com/stage.js');
 var level1 = require('./level-main.js'); //目前控制的主舞台
-var Floatnormal = require("../thing-main/frame-normal"); //选中的效果
-var Scrollsize = require("../thing-size/scroll-size"); //选中的效果
 
 var levelindex,levels=[];
 var obj={},stage;  //stage 才是createjs的元素
@@ -370,15 +368,8 @@ function init(pageevt){
 	addlevelassemblage();
 
 	floatnormal = Floatnormal(obj);
-	// addmdata({floatnormal:floatnormal});
-/*
-	var heart = new createjs.Shape();
-			heart.graphics.beginFill(createjs.Graphics.getHSL(Math.random() * 30 - 45, 100, 50 + Math.random() * 30));
-			heart.graphics.moveTo(0, -12).curveTo(1, -20, 8, -20).curveTo(16, -20, 16, -10).curveTo(16, 0, 0, 12);
-			heart.graphics.curveTo(-16, 0, -16, -10).curveTo(-16, -20, -8, -20).curveTo(-1, -20, 0, -12);
-			heart.y = -100;
 
-			stage.addChild(heart);*/
+
 }
 /*END 页面事件*/
 
@@ -424,7 +415,7 @@ module.exports=function (datas,id,pageevt) {
 	// obj.windowlinesarray=windowlinesarray;
 
 
-	//上面有问题
+
 	obj.run=run;
 
 	return obj;
@@ -440,7 +431,3 @@ module.exports.tochange=function(){
 
 
 
-
-/* 实体部件*/
-
-/* 实体部件*/
